@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+*{
+margin: 0;
+}
+
+/*****************************
+        LANDINGPAGE  CSS
+******************************/
+
+.landing-header{
+    background: url(./img/fish.webp) no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+nav {
+    background: #edeef0;
+    padding: 15px 50px;
+}
+nav li{
+    display: inline-block;
+}
+li.float{
+    float: right;
+}
+li span{
+    color: rgb(0, 115, 255);
+    font-weight: bold;
+}
+.btn-blue{
+    background: rgb(0, 115, 255);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.btn-sm{
+    width: 100px;
+}
+
+.text-overlay{
+    position: relative;
+    text-align: center;
+    top: 30%;
+}
+.text-overlay h1{
+    font-size: 35px;
+    color: #fff;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.subscription{
+    margin-top: 20px;
+}
+
+input{
+    width: 300px;
+    padding: 9px;
+    border: none;
+    border-radius: 5px;
+}
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+  }
+.grid-item{
+    padding: 50px;
+    border: 1px solid rgb(66, 90, 150);
+    border-radius: 5px;
+}
+.grid-item p{
+    color: gray;
+    margin-top: 10px;
+}
+.icone h1{
+    font-size: 40px;
+    color: rgb(0, 115, 255);
+}
+
+@media screen and (max-width: 780px){
+    /* For mobile phones: */
+
+    .grid-3{
+      grid-template-columns: repeat(1, 1fr) !important;
+    }
+    input{
+        width: 200px;
+    }
+    .text-overlay h1{
+        color: rgb(66, 90, 150) ;
+    }
+  }
+  
